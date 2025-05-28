@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Counter from '../src/page/Counter.jsx';
 import ProfileCard from '../src/page/ProfileCard.jsx';
 import UserList from './Effect/UserList.jsx';
@@ -26,6 +27,11 @@ export default function App() {
       <hr />
       <h1>useEffect 예제</h1>
       <UserList />
+      <>
+        <hr />
+        <h1>라우팅 예제</h1>
+        <Link to="/about">About</Link>
+      </>
     </>
   );
 }
