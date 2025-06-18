@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom';
-import Counter from '../src/page/Counter.jsx';
-import ProfileCard from '../src/page/ProfileCard.jsx';
-import UserList from './Effect/UserList.jsx';
-import DarkModeToggle from './state/DarkModeToggle.jsx';
-import InputForm from './state/InputForm.jsx';
+import ProfileCard from './chapter2/ProfileCard.jsx';
+import Counter from './chapter3/Counter.jsx';
+import InputForm from './chapter3/InputForm.jsx';
+import DarkModeToggle from './chapter3/DarkModeToggle.jsx';
+import UserList from './chapter4/UserList.jsx';
 
 export default function App() {
   return (
     <>
       <div>
-        <h1>Props vs State 예제</h1>
-        <Counter title="클릭 카운터" />
-      </div>
-      <div>
         <h1>프로필 카드 예제</h1>
         <ProfileCard />
+      </div>
+      <div>
+        <h1>Props vs State 예제</h1>
+        <Counter title="클릭 카운터" />
       </div>
       <div>
         <h1>inputform 예제</h1>
