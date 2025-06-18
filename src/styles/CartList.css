@@ -1,0 +1,29 @@
+.cartlist-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 80%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid black;
+  border-radius: 12px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.cartlist-li {
+  margin-bottom: '8px';
+  padding: 10px;
+}
+
+.cartlist-remove-btn {
+  font-weight: 800;
+  margin-left: 10px;
+  color: black;
+  background-color: rgba(255, 0, 0, 0.5);
+  border: 2px solid red;
+  border-radius: 12px;
+}
