@@ -4,6 +4,9 @@ import Counter from './chapter3/Counter.jsx';
 import InputForm from './chapter3/InputForm.jsx';
 import DarkModeToggle from './chapter3/DarkModeToggle.jsx';
 import UserList from './chapter4/UserList.jsx';
+import ThemePage from './chapter6/context/ThemePage.jsx';
+import CartList from './chapter6/zustand/CartList.jsx';
+import AddToCartButton from './chapter6/zustand/AddToCartBtn.jsx';
 
 export default function App() {
   return (
@@ -32,6 +35,15 @@ export default function App() {
         <h1>라우팅 예제</h1>
         <Link to="/about">About</Link>
       </>
+      <hr />
+      <h1>Context API로 다크모드 상태 관리 예제</h1>
+      <ThemePage />
+      <hr />
+      <h1>Zustand로 장바구니 전역 상태 관리 예제</h1>
+      {/* ✅ 여기에 추가된 리스트가 보임 */}
+      <CartList />
+      {/* ✅ 여기에 product 객체 전달 */}
+      <AddToCartButton />
     </>
   );
 }
