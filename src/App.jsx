@@ -8,6 +8,7 @@ import ThemePage from './chapter6/context/ThemePage.jsx';
 import CartList from './chapter6/zustand/CartList.jsx';
 import AddToCartButton from './chapter6/zustand/AddToCartBtn.jsx';
 import Dashboard from './chapter7/Dashboard.jsx';
+import Media from './chapter7/Media.jsx';
 
 export default function App() {
   return (
@@ -47,6 +48,9 @@ export default function App() {
       <AddToCartButton />
       <hr />
       <Dashboard />
+      <hr />
+      <h1>반응형 UI 예제</h1>
+      <Media />
     </>
   );
 }
