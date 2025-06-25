@@ -7,6 +7,7 @@ import UserList from './chapter4/UserList.jsx';
 import ThemePage from './chapter6/context/ThemePage.jsx';
 import CartList from './chapter6/zustand/CartList.jsx';
 import AddToCartButton from './chapter6/zustand/AddToCartBtn.jsx';
+import Dashboard from './chapter7/Dashboard.jsx';
 
 export default function App() {
   return (
@@ -44,6 +45,8 @@ export default function App() {
       <CartList />
       {/* ✅ 여기에 product 객체 전달 */}
       <AddToCartButton />
+      <hr />
+      <Dashboard />
     </>
   );
 }
