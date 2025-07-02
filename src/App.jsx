@@ -10,9 +10,19 @@ import AddToCartButton from './chapter6/zustand/AddToCartBtn.jsx';
 import Dashboard from './chapter7/Dashboard.jsx';
 import Media from './chapter7/Media.jsx';
 
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import GithubUser from './chapter8/GithubUser.jsx';
+import './styles/GithubUser.css';
+import { useState } from 'react';
+
+const queryClient = new QueryClient();
+
 export default function App() {
+  const [username, setUsername] = useState('naver');
+  const [inputValue, setInputValue] = useState('naver');
+
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <div>
         <h1>프로필 카드 예제</h1>
         <ProfileCard />
@@ -51,6 +61,21 @@ export default function App() {
       <hr />
       <h1>반응형 UI 예제</h1>
       <Media />
-    </>
+      <hr />
+      <h1>깃허브 유저 조회 예제</h1>
+      <GithubUser username={username} />
+      <div className="github-input-container">
+        <input
+          className="github-input"
+          type="text"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          placeholder="GitHub 사용자명 입력"
+        />
+        <button className="github-btn" onClick={() => setUsername(inputValue)}>
+          조회
+        </button>
+      </div>
+    </QueryClientProvider>
   );
 }
