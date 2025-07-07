@@ -15,6 +15,7 @@ import GithubUser from './chapter8/GithubUser.jsx';
 import './styles/GithubUser.css';
 import { useState } from 'react';
 import AuroraExample from './chapter9/AuroraExample.jsx';
+import SwiperExample from './chapter9/SwiperExample.jsx';
 
 const queryClient = new QueryClient();
 
@@ -80,6 +81,9 @@ export default function App() {
       <hr />
       <h1>아우라 예제</h1>
       <AuroraExample />
+      <hr />
+      <h1>Swiper 예제</h1>
+      <SwiperExample />
     </QueryClientProvider>
   );
 }
