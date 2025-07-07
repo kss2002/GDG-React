@@ -14,6 +14,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import GithubUser from './chapter8/GithubUser.jsx';
 import './styles/GithubUser.css';
 import { useState } from 'react';
+import AuroraExample from './chapter9/AuroraExample.jsx';
 
 const queryClient = new QueryClient();
 
@@ -76,6 +77,9 @@ export default function App() {
           조회
         </button>
       </div>
+      <hr />
+      <h1>아우라 예제</h1>
+      <AuroraExample />
     </QueryClientProvider>
   );
 }
